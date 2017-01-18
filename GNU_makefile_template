@@ -1,0 +1,15 @@
+CC = g++
+CCFLAGS = -g -Wall -std=c++11 -I.
+
+LOCFLAGS =
+
+all: $(OBJECTS) 
+
+%.o: %.cc
+	$(CC) $(CCFLAGS) $(LOCFLAGS) -c $< -o $@
+
+%.out: %.o 
+	$(CC) $(CCFLAGS) $(LOCFLAGS) $< -o $@
+
+clean:
+	rm -rf *.o *.out
