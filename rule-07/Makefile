@@ -1,4 +1,4 @@
-OBJECTS =  noncopy.out
+OBJECTS =  poly.out
 
 include ../GNU_makefile_template
 
