@@ -1,4 +1,4 @@
-OBJECTS = date.out
+OBJECTS = airplane.out
 
 include ../GNU_makefile_template
 
